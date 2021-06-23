@@ -1,6 +1,22 @@
 import BlogPost from "./BlogPost";
-function content(): JSX.Element {
-  return <h1>Welcome to Beyond the Cockpit</h1>;
+
+const blogArr = [{title:"Meet the Crew", date: "23rd June 2021",  body: "Our first blog post", author: "Mohamed and Vyoma"}]
+
+function Content(): JSX.Element {
+    return (
+      <main> 
+        {blogArr.map(blogpost=><BlogPost
+        title={blogpost.title}
+        date={blogpost.date}
+        //image={blogpost.image}
+        body={blogpost.body}
+        author={blogpost.author}
+        />)}
+
+      </main>
+
+    )
+
 }
 
-export default content;
+export default Content;
