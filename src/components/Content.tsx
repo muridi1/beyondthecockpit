@@ -1,4 +1,3 @@
-import { title } from "process";
 import BlogPost from "./BlogPost";
 
 const blogArr = [
@@ -7,7 +6,7 @@ const blogArr = [
     date: "23rd June 2021",
     body: "Our first blog post",
     author: "Mohamed and Vyoma",
-  },
+      },
 ];
 
 function Content(): JSX.Element {
@@ -15,7 +14,7 @@ function Content(): JSX.Element {
     <main>
       {blogArr.map((blogpost) => (
         <BlogPost
-          key={title}
+          key={blogpost.author}
           title={blogpost.title}
           date={blogpost.date}
           //image={blogpost.image}

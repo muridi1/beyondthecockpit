@@ -3,7 +3,8 @@ interface BlogPostProps {
   date: string;
   //image: string;
   body: string;
-  author: string;
+  author: string
+  
 }
 function BlogPost(props: BlogPostProps): JSX.Element {
   return (
